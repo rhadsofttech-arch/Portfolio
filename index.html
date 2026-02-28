@@ -538,12 +538,12 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 30px;
             margin-top: 40px;
         }
         .logo-item {
             background: var(--bg-card);
-            width: 160px;
+            min-width: 160px;
             height: 100px;
             border-radius: 24px;
             display: flex;
@@ -575,6 +575,7 @@
             font-weight: 700;
             font-size: 1.2rem;
             color: var(--text-luminous);
+            text-align: center;
         }
 
         /* personal gallery section */
@@ -816,7 +817,7 @@
                     <h1>Adewunmi <span class="gradient-text">Erijide Adeniji</span></h1>
                     <div class="hero-tagline">Software & Web Applications Architect</div>
                     
-                    <!-- SOCIAL MEDIA ICONS (added as requested) -->
+                    <!-- SOCIAL MEDIA ICONS -->
                     <div class="social-icons">
                         <a href="https://www.instagram.com/techbroda_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://x.com/techbroda_" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
@@ -824,31 +825,34 @@
                         <a href="https://www.facebook.com/share/1AmAKg3SVC/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
 
-                    <!-- Comprehensive bio (expanded, professional) -->
+                    <!-- Comprehensive bio -->
                     <p style="font-size: 1.2rem; color: var(--text-soft); margin: 25px 0 15px; line-height: 1.7; max-width: 600px;">
                         I'm a seasoned software architect with over 8 years of experience engineering high‑load web platforms, enterprise portals, and secure API ecosystems. I blend deep backend expertise with an eye for intuitive UI — delivering solutions that are both robust and human‑centered. 
                     </p>
-                    
+                    <p style="font-size: 1.2rem; color: var(--text-soft); margin-bottom: 20px; max-width: 600px;">
+                        Trusted by organizations like IEMA, Kaplan Energy, Adebisi Foods, and Mainway Insurance to modernize legacy systems, reduce downtime, and accelerate digital transformation. I don't just write code — I architect impact.
+                    </p>
+
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View projects</a>
                         <a href="#contact" class="btn btn-outline">Contact me</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <!-- Your actual image path (already updated) -->
+                    <!-- Your actual image path -->
                     <img src="Images/Ade.png" alt="Adewunmi Erijide Adeniji" id="profileImage">
                 </div>
             </div>
         </section>
 
-        <!-- About with counters (expanded bio already covered, but we keep the glass card for extra) -->
+        <!-- About with counters -->
         <section id="about">
             <h2>More about me</h2>
             <div class="glass-card">
                 <p style="font-size: 1.3rem; margin-bottom: 32px; color: var(--text-luminous);">I architect reliable digital systems — from certification portals to real‑time booking platforms. With a deep focus on security, performance, and intuitive design, I transform complex requirements into seamless web experiences. My work has directly improved certificate issuance efficiency by 60% and reduced support tickets by 45% through robust automation.</p>
                 <div class="counter-row">
                     <div class="counter-item"><span class="counter-number" data-target="8">0</span><p>Years impact</p></div>
-                    <div class="counter-item"><span class="counter-number" data-target="25">0</span><p>Enterprise launches</p></div>
+                    <div class="counter-item"><span class="counter-number" data-target="30">0</span><p>Enterprise launches</p></div>
                     <div class="counter-item"><span class="counter-number" data-target="100">0</span><p>% uptime SLA</p></div>
                 </div>
             </div>
@@ -869,7 +873,7 @@
             </div>
         </section>
 
-        <!-- Projects with gallery -->
+        <!-- Projects with gallery (UPDATED with new projects) -->
         <section id="projects">
             <h2>Featured work</h2>
             <div class="projects-grid">
@@ -897,10 +901,43 @@
                 <div class="project-card"><div class="project-gallery"><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div></div><div class="project-info"><h3>Journal platform</h3><p>Academic publishing system</p><div class="tech-stack"><span class="tech-tag">Django</span><span class="tech-tag">Postgres</span></div><a href="https://journal.jema.org" class="project-link" target="_blank">journal.jema.org <i class="fas fa-arrow-right"></i></a></div></div>
                 <!-- booking -->
                 <div class="project-card"><div class="project-gallery"><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div></div><div class="project-info"><h3>Booking platform</h3><p>Service scheduling</p><div class="tech-stack"><span class="tech-tag">React</span><span class="tech-tag">Firebase</span></div><a href="https://bookmenaija.xyz" class="project-link" target="_blank">bookmenaija.xyz <i class="fas fa-arrow-right"></i></a></div></div>
-                <!-- real estate -->
+                <!-- real estate (existing) -->
                 <div class="project-card"><div class="project-gallery"><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div></div><div class="project-info"><h3>MyPropify</h3><p>Real estate marketplace</p><div class="tech-stack"><span class="tech-tag">Vue</span><span class="tech-tag">Express</span></div><a href="https://mypropify.com.ng" class="project-link" target="_blank">mypropify.com.ng <i class="fas fa-arrow-right"></i></a></div></div>
                 <!-- iema standards -->
                 <div class="project-card"><div class="project-gallery"><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div><div class="gallery-slot"></div></div><div class="project-info"><h3>IEMA standards</h3><p>Official certification portal</p><div class="tech-stack"><span class="tech-tag">WordPress</span><span class="tech-tag">Custom</span></div><a href="https://iemacert.com" class="project-link" target="_blank">iemacert.com <i class="fas fa-arrow-right"></i></a></div></div>
+                <!-- NEW: Real estate listing platform for Omagplus -->
+                <div class="project-card">
+                    <div class="project-gallery">
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/3b82f6/ffffff?text=omag1')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/8b5cf6/ffffff?text=omag2')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/2563eb/ffffff?text=omag3')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/1e293b/ffffff?text=omag4')"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Omagplus Real Estate</h3>
+                        <p style="color: var(--text-soft);">Real estate listing platform for Omagplus</p>
+                        <div class="tech-stack"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span></div>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <a href="https://www.omagplus.com" class="project-link" target="_blank">omagplus.com <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://cigg.omagplus.com" class="project-link" target="_blank">cigg.omagplus.com <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NEW: Adebisi Foods website -->
+                <div class="project-card">
+                    <div class="project-gallery">
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/10b981/ffffff?text=adebisi1')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/3b82f6/ffffff?text=adebisi2')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/8b5cf6/ffffff?text=adebisi3')"></div>
+                        <div class="gallery-slot" style="background-image: url('https://via.placeholder.com/300/1e293b/ffffff?text=adebisi4')"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Adebisi Foods</h3>
+                        <p style="color: var(--text-soft);">Food processing company website</p>
+                        <div class="tech-stack"><span class="tech-tag">WordPress</span><span class="tech-tag">Custom</span></div>
+                        <a href="https://adebisifoods.ng" class="project-link" target="_blank">adebisifoods.ng <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -918,7 +955,7 @@
             </div>
         </section>
 
-        <!-- company logos section -->
+        <!-- company logos section (UPDATED with new companies) -->
         <section id="companies" class="company-logos">
             <h2>Companies I've worked with</h2>
             <div class="logos-grid">
@@ -926,11 +963,16 @@
                 <div class="logo-item"><img src="https://via.placeholder.com/160x80/1a1d21/8b5cf6?text=MAINWAY" alt="Mainway Insurance"></div>
                 <div class="logo-item"><img src="https://via.placeholder.com/160x80/1a1d21/10b981?text=IEMA" alt="IEMA"></div>
                 <div class="logo-item"><div class="logo-fallback">IIEMA</div></div>
-                <div class="logo-item"><div class="logo-fallback">ENERGY</div></div>
+                <!-- NEW companies -->
+                <div class="logo-item"><div class="logo-fallback">Adebisi Foods</div></div>
+                <div class="logo-item"><div class="logo-fallback">Solic Theological</div></div>
+                <div class="logo-item"><div class="logo-fallback">Chillax Guest House</div></div>
+                <div class="logo-item"><div class="logo-fallback">Marfran Energy</div></div>
+                <div class="logo-item"><div class="logo-fallback">Breakthrough Schools</div></div>
             </div>
         </section>
 
-        <!-- personal images gallery (using your actual image paths) -->
+        <!-- personal images gallery -->
         <section id="personal" class="personal-gallery">
             <h2>Personal moments</h2>
             <div class="personal-grid">
@@ -1026,3 +1068,4 @@
     </script>
 </body>
                                                                                                                                                                                                                                                                                                                                                                                                </html>
+                                                                                                                                                                                                                                                                                                                                                                                               
